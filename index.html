@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Site</title>
+    <meta name="description" content="A personal website." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">My Site</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <h1>Hi, I'm a placeholder name.</h1>
+        <p>Welcome to my corner of the web. Replace this text with a short introduction.</p>
+      </section>
+
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p>Tell visitors who you are, what you care about, and what you are working on.</p>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <ul class="projects">
+          <li>
+            <h3>Project one</h3>
+            <p>A short description of something you built.</p>
+          </li>
+          <li>
+            <h3>Project two</h3>
+            <p>Another short description of a project or piece of writing.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Add an email address or links to your profiles here.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> My Site</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
